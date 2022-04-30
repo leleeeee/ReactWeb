@@ -1,8 +1,24 @@
 .body {
   top: 100px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
   left: 0;
   width: 100%;
   text-align: center;
-  background-color: #6ce019;
-  color: white;
+  color: black;
+}
+
+.rcw-message > .rcw-response {
+  color: black;
+}
+
+.rcw-conversation-container > .rcw-header {
+  background-color: greenyellow;
+}
+
+.rcw-input {
+  color: black;
+  justify-content: flex-start;
+  text-align: start;
 }

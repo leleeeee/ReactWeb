@@ -12,7 +12,7 @@ export default function App() {
       <Header/>
       <Slider/>
       <Body message="Thiết kế nội thất"/>
-      <Footer note="@Copyright by Me" />
+      <Footer/>
     </div>
   );
 }

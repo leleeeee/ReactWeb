@@ -4,7 +4,7 @@ import "./Footer.css";
 export default function Header(props) {
   return (
     <div className="footer">
-      <h1>{props.note}</h1>
+      <h5>©️Copyright by https://github.com/leleeeee</h5>
     </div>
   );
 }

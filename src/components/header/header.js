@@ -6,9 +6,9 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="dark" variant={"dark"} expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+          <Navbar.Brand href="#">Home</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -16,7 +16,7 @@ export default class Header extends Component {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href="#action1">Trang chủ</Nav.Link>
+              <Nav.Link href="#action1">About Us</Nav.Link>
               <NavDropdown title="Danh mục" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Phòng khách</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">Phòng ngủ</NavDropdown.Item>
