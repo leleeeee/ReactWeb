@@ -8,7 +8,7 @@ export default class Header extends Component {
       <div>
       <Navbar bg="dark" variant={"dark"} expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#">Home</Navbar.Brand>
+          <Navbar.Brand href="#">NTVP</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -17,15 +17,17 @@ export default class Header extends Component {
               navbarScroll
             >
               <Nav.Link href="#action1">About Us</Nav.Link>
-              <NavDropdown title="Danh mục" id="navbarScrollingDropdown">
+              <NavDropdown title="Phong cách" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Phòng khách</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">Phòng ngủ</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">Phòng ăn</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">Phòng bếp</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Các vật dụng trang trí nội thất khác...
-                </NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown title="Trang trí nhà cửa" id="navbarScrollingDropdown">
+                <NavDropdown.Item href="#action3">Bàn</NavDropdown.Item>
+                <NavDropdown.Item href="#action4">Ghế</NavDropdown.Item>
+                <NavDropdown.Item href="#action4">Tủ bếp</NavDropdown.Item>
+                <NavDropdown.Item href="#action4">Đèn</NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Form className="d-flex">

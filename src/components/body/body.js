@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./Body.css";
 import { Widget, addResponseMessage } from 'react-chat-widget';
+import MainContent from './products';
 
 import 'react-chat-widget/lib/styles.css';
 
@@ -16,7 +17,8 @@ export default function Header(props) {
   return (
     <div className="body">
       <h1>{props.message}</h1>
-        <Widget
+      <MainContent/>
+      <Widget
         handleNewUserMessage={handleNewUserMessage}
         title='Bạn cần gì?'
         emojis={true}
