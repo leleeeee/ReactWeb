@@ -31,7 +31,7 @@
   position: relative;
   width: 70%;
   height: 70%;
-  margin: 50px auto;
+  margin: 20px auto;
   padding: 50px 0 0;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -70,5 +70,14 @@
 }
 
 .description {
-  margin: 20px;
+  text-align: center;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.card_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

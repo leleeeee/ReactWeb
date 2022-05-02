@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Header.css";
 import { Navbar, Nav, NavDropdown, Container, Button, Form, FormControl } from "react-bootstrap";
 import { HOME_ICON_SIZE } from "../../constant/constant";
+import { Link } from "react-router-dom";
 
 export default class Header extends Component {
   render() {
@@ -9,14 +10,16 @@ export default class Header extends Component {
       <div>
       <Navbar bg="dark" variant={"dark"} expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#">
-            <img
-              src="https://cdn-icons.flaticon.com/png/512/1531/premium/1531779.png?token=exp=1651511156~hmac=e21062c1a8380cf08be055f6b61913c0"
-              width={HOME_ICON_SIZE}
-              height={HOME_ICON_SIZE}
-              alt="UR"
-            />
-          </Navbar.Brand>
+          <Link to='/'>
+            <Navbar.Brand href="#">
+              <img
+                src="https://cdn-icons.flaticon.com/png/512/1531/premium/1531779.png?token=exp=1651525656~hmac=b4d17eeb54655f259e0e3ac381a80bdf"
+                width={HOME_ICON_SIZE}
+                height={HOME_ICON_SIZE}
+                alt="UR"
+              />
+            </Navbar.Brand>
+          </Link>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -24,7 +27,7 @@ export default class Header extends Component {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href="#action1">About Us</Nav.Link>
+              <Nav.Link href="/about-us">About Us</Nav.Link>
               <NavDropdown title="Phong cách" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Phòng khách</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">Phòng ngủ</NavDropdown.Item>
@@ -32,10 +35,10 @@ export default class Header extends Component {
                 <NavDropdown.Item href="#action4">Phòng bếp</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Trang trí nhà cửa" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Bàn</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">Ghế</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">Tủ bếp</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">Đèn</NavDropdown.Item>
+                <NavDropdown.Item href={`/products/${'Bàn'}`}>Bàn</NavDropdown.Item>
+                <NavDropdown.Item href={`/products/${'Ghế'}`}>Ghế</NavDropdown.Item>
+                <NavDropdown.Item href={`/products/${'Tủ bếp'}`}>Tủ bếp</NavDropdown.Item>
+                <NavDropdown.Item href={`/products/${'Đèn'}`}>Đèn</NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Form className="d-flex">

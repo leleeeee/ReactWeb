@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./Body.css";
 import { Widget, addResponseMessage } from 'react-chat-widget';
-import MainContent from './products';
 
 import 'react-chat-widget/lib/styles.css';
 
@@ -17,7 +16,6 @@ export default function Header(props) {
   return (
     <div className="body">
       <h1>{props.message}</h1>
-      <MainContent/>
       <Widget
         handleNewUserMessage={handleNewUserMessage}
         profileAvatar={'https://cdn-icons.flaticon.com/png/512/3061/premium/3061500.png?token=exp=1651509766~hmac=c660714f8b8b6db9bba8c1597f410040'}
