@@ -2,6 +2,8 @@ import React from 'react';
 import { products } from '../../resources/product';
 import './Body.css';
 
+import { PRODUCT_THUMBNAIL_SIZE } from '../../constant/constant';
+
 const MainContent = () => {
   const listItems = products.map((item) => 
     <div className='card' key={item.id}>
@@ -10,8 +12,8 @@ const MainContent = () => {
           alt='Furniture'
           style={{
             alignSelf: 'center',
-            height: 300,
-            width: 300,
+            height: PRODUCT_THUMBNAIL_SIZE,
+            width: PRODUCT_THUMBNAIL_SIZE,
             borderWidth: 1,
             borderRadius: 150
           }}

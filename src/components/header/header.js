@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Header.css";
 import { Navbar, Nav, NavDropdown, Container, Button, Form, FormControl } from "react-bootstrap";
+import { HOME_ICON_SIZE } from "../../constant/constant";
 
 export default class Header extends Component {
   render() {
@@ -8,7 +9,14 @@ export default class Header extends Component {
       <div>
       <Navbar bg="dark" variant={"dark"} expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#">NTVP</Navbar.Brand>
+          <Navbar.Brand href="#">
+            <img
+              src="https://cdn-icons.flaticon.com/png/512/1531/premium/1531779.png?token=exp=1651511156~hmac=e21062c1a8380cf08be055f6b61913c0"
+              width={HOME_ICON_SIZE}
+              height={HOME_ICON_SIZE}
+              alt="UR"
+            />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
