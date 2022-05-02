@@ -37,8 +37,16 @@
   flex-wrap: wrap;
 }
 
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .card_thumb {
   margin-top: 10px;
+  width: auto;
+  height: auto;
 }
 
 .price {
@@ -59,4 +67,8 @@
   position: relative;
   transition: background-color .3s ease;
   overflow: hidden;
+}
+
+.description {
+  margin: 20px;
 }

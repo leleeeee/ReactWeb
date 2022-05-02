@@ -7,7 +7,7 @@ import 'react-chat-widget/lib/styles.css';
 
 export default function Header(props) {
   useEffect(() => {
-    addResponseMessage('Một lời giới thiệu rất dài');
+    addResponseMessage('Chào mừng đến với NTVP!ヾ(＠⌒ー⌒＠)ノ\nĐây là một lời giới thiệu rất dài về chúng tôi!\nCảm ơn bạn đã quan tâm!');
   }, []);
 
   const handleNewUserMessage = (newMessage) => {
@@ -20,7 +20,9 @@ export default function Header(props) {
       <MainContent/>
       <Widget
         handleNewUserMessage={handleNewUserMessage}
+        profileAvatar={'https://cdn-icons.flaticon.com/png/512/3061/premium/3061500.png?token=exp=1651509766~hmac=c660714f8b8b6db9bba8c1597f410040'}
         title='Bạn cần gì?'
+        profileClientAvatar={'https://cdn-icons-png.flaticon.com/512/2829/2829679.png'}
         emojis={true}
         showCloseButton={true}
         subtitle="Hãy nhắn tin ngay"

@@ -7,6 +7,7 @@ const MainContent = () => {
     <div className='card' key={item.id}>
       <div className='card_thumb'>
         <img
+          alt='Furniture'
           style={{
             alignSelf: 'center',
             height: 300,
@@ -20,10 +21,10 @@ const MainContent = () => {
       </div>
       <div className='card_header'>
         <h2>{item.name}</h2>
-        <p>{item.description}</p>
+        <p className='description'>{item.description}</p>
         <p className='price'>{item.price} VNĐ</p>
-        <div className='btn'>Thêm vào giỏ</div>
       </div>
+      <div className='btn'>Thêm vào giỏ</div>
     </div>
   )
 
