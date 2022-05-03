@@ -34,6 +34,8 @@ const MainContent = () => {
         <div className='btn'>Thêm vào giỏ</div>
       </div>
       )
+    else
+      return null;
     }
   )
 

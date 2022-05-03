@@ -34,11 +34,12 @@ export default function Slider() {
             {dataSlider.map((obj, index) => {
                 return (
                     <div
-                    key={obj.id}
-                    className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
+                        key={obj.id}
+                        className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
                     >
                         <img 
-                        src={process.env.PUBLIC_URL + `/Images/img0${index + 1}.png`} 
+                            src={process.env.PUBLIC_URL + `/Images/img0${index + 1}.png`}
+                            alt='cover'
                         />
                     </div>
                 )

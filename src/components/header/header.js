@@ -29,9 +29,12 @@ export default class Header extends Component {
             >
               <Nav.Link href="/about-us">About Us</Nav.Link>
               <NavDropdown title="Phong cách" id="navbarScrollingDropdown">
+                <NavDropdown.Item href="#action3">Chung cư</NavDropdown.Item>
+                <NavDropdown.Item href="#action3">Nhà phố</NavDropdown.Item>
+                <NavDropdown.Item href="#action3">Văn phòng</NavDropdown.Item>
+                <NavDropdown.Divider/>
                 <NavDropdown.Item href="#action3">Phòng khách</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">Phòng ngủ</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">Phòng ăn</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">Phòng bếp</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Trang trí nhà cửa" id="navbarScrollingDropdown">

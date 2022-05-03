@@ -2,7 +2,7 @@
   display: flexbox;
   flex-direction: column;
   background: #f4f3f0;
-  padding: 20px 0 20px 0;
+  padding: 20px 0 20px 30px;
   margin-top: 30px;
   position: relative;
   color: #333;
@@ -10,10 +10,15 @@
 }
 
 .header {
-  margin: 30px;
+  margin: 30px 50px;
 }
 
 .social {
   display: flex;
-  justify-content: space-around;
+  justify-content: right;
+  margin: 0 50px;
+}
+
+.icon {
+  margin: 0 10px;
 }
