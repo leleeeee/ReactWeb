@@ -41,7 +41,7 @@ export default function Header(props) {
       </div>
       <Widget
         handleNewUserMessage={handleNewUserMessage}
-        profileAvatar={'https://cdn-icons.flaticon.com/png/512/3061/premium/3061500.png?token=exp=1651509766~hmac=c660714f8b8b6db9bba8c1597f410040'}
+        profileAvatar={process.env.PUBLIC_URL + `/Images/avt.png`}
         title='Bạn cần gì?'
         profileClientAvatar={'https://cdn-icons-png.flaticon.com/512/2829/2829679.png'}
         emojis={true}

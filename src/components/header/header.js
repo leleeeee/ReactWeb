@@ -27,7 +27,7 @@ export default class Header extends Component {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href="/about-us">About Us</Nav.Link>
+              <Nav.Link href="/about-us">Giới thiệu</Nav.Link>
               <NavDropdown title="Phong cách" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Chung cư</NavDropdown.Item>
                 <NavDropdown.Item href="#action3">Nhà phố</NavDropdown.Item>
@@ -43,6 +43,7 @@ export default class Header extends Component {
                 <NavDropdown.Item href={`/products/${'Tủ bếp'}`}>Tủ bếp</NavDropdown.Item>
                 <NavDropdown.Item href={`/products/${'Đèn'}`}>Đèn</NavDropdown.Item>
               </NavDropdown>
+              <Nav.Link href="/about-us">Dự án nổi bật</Nav.Link>
             </Nav>
             <Form className="d-flex">
               <FormControl
