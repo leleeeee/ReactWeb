@@ -8,6 +8,7 @@ import Footer from "./components/footer/footer";
 import Slider from './components/slider/slider';
 import AboutUs from "./components/body/aboutus";
 import MainContent from "./components/body/products";
+import HomeStyle from "./components/body/home_style";
 
 export default function App() {
   return (
@@ -24,6 +25,9 @@ export default function App() {
           </Route>
           <Route path='/products/:category'>
             <MainContent/>
+          </Route>
+          <Route path='/home-style'>
+            <HomeStyle/>
           </Route>
         </Switch>
         <Footer/>
