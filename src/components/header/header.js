@@ -3,17 +3,19 @@ import "./Header.css";
 import { Navbar, Nav, NavDropdown, Container, Button, Form, FormControl } from "react-bootstrap";
 import { HOME_ICON_SIZE } from "../../constant/constant";
 import { Link } from "react-router-dom";
+import { IconButton } from "@mui/material";
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 export default class Header extends Component {
   render() {
     return (
       <div>
-      <Navbar bg="dark" variant={"dark"} expand="lg">
+      <Navbar bg="dark" variant={"dark"} expand="sm">
         <Container fluid>
           <Link to='/'>
             <Navbar.Brand href="#">
               <img
-                src="https://cdn-icons.flaticon.com/png/512/1531/premium/1531779.png?token=exp=1651525656~hmac=b4d17eeb54655f259e0e3ac381a80bdf"
+                src={process.env.PUBLIC_URL + `/mainLogo.png`}
                 width={HOME_ICON_SIZE}
                 height={HOME_ICON_SIZE}
                 alt="UR"
@@ -52,8 +54,12 @@ export default class Header extends Component {
                 placeholder="Search"
                 className="me-2"
                 aria-label="Search"
+                style={{height: 40}}
               />
               <Button variant="outline-success">Search</Button>
+              <IconButton color="primary" aria-label="add to shopping cart" size="large" href="/cart">
+                <AddShoppingCartIcon />
+              </IconButton>
             </Form>
           </Navbar.Collapse>
         </Container>

@@ -1,20 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Body.css";
-import { Widget, addResponseMessage } from 'react-chat-widget';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-import 'react-chat-widget/lib/styles.css';
 
 export default function Header(props) {
-  useEffect(() => {
-    AOS.init();
-    addResponseMessage('Chào mừng đến với NTVP!ヾ(＠⌒ー⌒＠)ノ\nĐây là một lời giới thiệu rất dài về chúng tôi!\nCảm ơn bạn đã quan tâm!');
-  }, []);
-
-  const handleNewUserMessage = (newMessage) => {
-    console.log(`New message incoming! ${newMessage}`);
-  };
+  
 
   return (
     <div className="body">
@@ -39,15 +27,6 @@ export default function Header(props) {
           />
         </div>
       </div>
-      <Widget
-        handleNewUserMessage={handleNewUserMessage}
-        profileAvatar={process.env.PUBLIC_URL + `/Images/avt.png`}
-        title='Bạn cần gì?'
-        profileClientAvatar={'https://cdn-icons-png.flaticon.com/512/2829/2829679.png'}
-        emojis={true}
-        showCloseButton={true}
-        subtitle="Hãy nhắn tin ngay"
-      />
     </div>
   );
 }

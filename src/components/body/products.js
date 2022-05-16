@@ -1,13 +1,13 @@
 import React from 'react';
-import { products } from '../../resources/product';
 import './Body.css';
 import { useParams } from 'react-router-dom';
 
 import { PRODUCT_THUMBNAIL_SIZE } from '../../constant/constant';
 
-const MainContent = () => {
+const MainContent = (props) => {
   const { category } = useParams();
-  
+  const { products, onAdd, notify } = props;
+
   const listItems = products.map((item) => {
     if (item.category === category)
       return (
@@ -31,7 +31,7 @@ const MainContent = () => {
           <p className='description'>{item.description}</p>
           <p className='price'>{item.price} VNĐ</p>
         </div>
-        <div className='btn'>Thêm vào giỏ</div>
+        <div className='btn' onClick={() => {onAdd(item); notify();}}>Thêm vào giỏ</div>
       </div>
       )
     else
