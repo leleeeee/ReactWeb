@@ -45,7 +45,7 @@ export default class Header extends Component {
                 <NavDropdown.Item href={`/products/${'Tủ bếp'}`}>Tủ bếp</NavDropdown.Item>
                 <NavDropdown.Item href={`/products/${'Đèn'}`}>Đèn</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="/about-us">Dự án nổi bật</Nav.Link>
+              <Nav.Link href="/design">Dự án nổi bật</Nav.Link>
               <Nav.Link href="/home-style">Thiết kế trực tiếp</Nav.Link>
             </Nav>
             <Form className="d-flex">

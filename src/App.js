@@ -10,6 +10,8 @@ import AboutUs from "./components/body/aboutus";
 import MainContent from "./components/body/products";
 import HomeStyle from "./components/body/home_style";
 import Cart from "./components/body/cart/cart";
+import DesignGrid from "./components/body/description/design";
+import LocationForm from "./components/body/cart/location/LocationForm";
 
 import { products } from "./resources/product";
 import { CART_ITEM_STORAGE_KEY } from "./constant/constant"
@@ -96,6 +98,12 @@ export default function App() {
           <Route path='/cart'>
             <Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}/>
           </Route>
+          <Route path='/design'>
+            <DesignGrid/>
+          </Route>
+          <Route path='/payment'>
+            <LocationForm/>
+          </Route>
         </Switch>
         <Widget
           handleNewUserMessage={handleNewUserMessage}
@@ -107,7 +115,7 @@ export default function App() {
           subtitle="Hãy nhắn tin ngay"
         />
         <ToastContainer />
-        <Footer/> 
+        <Footer cartItems={cartItems}/> 
       </Router>
     </div>
   );

@@ -12,27 +12,27 @@ const MainContent = (props) => {
     if (item.category === category)
       return (
         <div className='card' key={item.id}>
-        <div className='card_thumb'>
-          <img
-            alt='Furniture'
-            style={{
-              alignSelf: 'center',
-              height: PRODUCT_THUMBNAIL_SIZE,
-              width: PRODUCT_THUMBNAIL_SIZE,
-              borderWidth: 1,
-              borderRadius: 150
-            }}
-            src={item.imageLink[0]}
-            resizeMode="stretch"
-            />
+          <div className='card_thumb'>
+            <img
+              alt='Furniture'
+              style={{
+                alignSelf: 'center',
+                height: PRODUCT_THUMBNAIL_SIZE,
+                width: PRODUCT_THUMBNAIL_SIZE,
+                borderWidth: 1,
+                borderRadius: 150
+              }}
+              src={item.imageLink[0]}
+              resizeMode="stretch"
+              />
+          </div>
+          <div className='card_header'>
+            <h2>{item.name}</h2>
+            <p className='description'>{item.description}</p>
+            <p className='price'>{item.price} VNĐ</p>
+          </div>
+          <div className='btn' onClick={() => {onAdd(item); notify();}}>Thêm vào giỏ</div>
         </div>
-        <div className='card_header'>
-          <h2>{item.name}</h2>
-          <p className='description'>{item.description}</p>
-          <p className='price'>{item.price} VNĐ</p>
-        </div>
-        <div className='btn' onClick={() => {onAdd(item); notify();}}>Thêm vào giỏ</div>
-      </div>
       )
     else
       return null;

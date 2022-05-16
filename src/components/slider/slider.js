@@ -32,7 +32,9 @@ export default function Slider() {
 
   const location = useLocation();
 
-  if (location.pathname !== '/cart')
+  const notRender = [ '/cart', '/payment' ]
+
+  if (!notRender.includes(location.pathname))
     return (
         <div className="container-slider">
                 {dataSlider.map((obj, index) => {
