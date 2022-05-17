@@ -15,6 +15,7 @@ const DesignGrid = () => {
           key={item.id}
           whileHover={{
             scale: 1.1,
+            opacity: 1.2
           }}
         >
           <div className='card-thumb'>

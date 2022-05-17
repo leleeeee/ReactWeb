@@ -10,7 +10,7 @@ export default function Header(props) {
         <h2>Nội thất đỉnh cao - Thiết kế thời thượng - Không gì là không thể</h2>
         <h1>Là chúng tôi <strong>UR</strong></h1>
       </div>
-      <div className="main-container">
+      <div className="main_container">
         <div data-aos="fade-right">
           <p style={{textAlign:'justify', fontSize:'20px'}}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum dictum consequat. Duis ac dolor ut lorem egestas placerat quis id erat. Nunc vel nunc fringilla, semper enim et, porta dui. Mauris tristique nunc non velit vestibulum luctus. In mattis velit non eros consectetur blandit. Sed et posuere dolor, vel condimentum felis. Praesent a turpis mi. Nulla molestie odio purus, vitae commodo massa imperdiet vel. Morbi eget imperdiet nisi.

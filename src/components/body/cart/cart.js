@@ -6,12 +6,25 @@ import Remove from '@mui/icons-material/Remove';
 import { IconButton, Button } from '@mui/material';
 
 import LocationForm from './location/LocationForm';
+import PaymentRadio from './payment/payment';
+
+import { ToastContainer, toast } from "react-toastify";
+import { CART_ITEM_STORAGE_KEY } from "../../../constant/constant";
+import 'react-toastify/dist/ReactToastify.css';
+
+import { Link } from 'react-router-dom';
 
 export default function Cart(props) {
   const { cartItems, onAdd, onRemove } = props;
   const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
   const taxPrice = itemsPrice * 0.14;
   const totalPrice = itemsPrice + taxPrice;
+
+  const notify = () => toast.success("Đã tiếp nhận đơn hàng", {icon: "✅"});
+  const clearCart = () => {
+    localStorage.removeItem(CART_ITEM_STORAGE_KEY);
+    window.scrollTo(0, 0);
+  }
 
   return (
     <div className='cart'>
@@ -74,15 +87,19 @@ export default function Cart(props) {
               <h4>Thông tin giao hàng</h4>
                 <LocationForm/>
             </div>
-            <div className='payment'>
-              
+            <h4>Chọn hình thức thanh toán</h4>
+            <div className='payment'>  
+              <PaymentRadio/>
             </div>
             <div className="button">
-              <Button variant="contained">Thanh toán</Button>
+              <Link to='/'>
+                <Button variant="contained" onClick={() => {notify(); clearCart();}}>Thanh toán</Button>
+              </Link>
             </div>
           </div>
         )}
       </div>
+      <ToastContainer />
     </div>
   );
 }

@@ -1,0 +1,30 @@
+.main-container {
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 0 80px;
+}
+
+.payment-card {
+  display: flex;
+  flex-direction: row;
+  /* border: 3px solid grey; */
+  border-radius: 10px;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.payment-logo {
+  margin: 20px 20px;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment-title {
+  flex: 2
+}

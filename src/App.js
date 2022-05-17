@@ -14,7 +14,7 @@ import DesignGrid from "./components/body/description/design";
 import LocationForm from "./components/body/cart/location/LocationForm";
 
 import { products } from "./resources/product";
-import { CART_ITEM_STORAGE_KEY } from "./constant/constant"
+import { CART_ITEM_STORAGE_KEY } from "./constant/constant";
 
 import { Widget, addResponseMessage } from 'react-chat-widget';
 import { ToastContainer, toast } from "react-toastify";

@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: flex-end;
   width: 100%;
+  margin: 30px 30px 0 0;
 }
 
 .row-1 {
@@ -31,4 +32,10 @@
   flex-direction: column;
   display: flex;
   gap: 10px;
+}
+
+.payment {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40px;
 }
