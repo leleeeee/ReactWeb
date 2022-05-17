@@ -1,6 +1,7 @@
 import React from 'react';
 import './Body.css';
 import { useParams } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 import { PRODUCT_THUMBNAIL_SIZE } from '../../constant/constant';
 
@@ -31,7 +32,7 @@ const MainContent = (props) => {
             <p className='description'>{item.description}</p>
             <p className='price'>{item.price} VNĐ</p>
           </div>
-          <div className='btn' onClick={() => {onAdd(item); notify();}}>Thêm vào giỏ</div>
+          <motion.div whileHover={{scale: 1.05}} className='btn' onClick={() => {onAdd(item); notify();}}>Thêm vào giỏ</motion.div>
         </div>
       )
     else

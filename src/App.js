@@ -68,7 +68,7 @@ export default function App() {
 
   useEffect(() => {
     AOS.init();
-    addResponseMessage('Chào mừng đến với NTVP!ヾ(＠⌒ー⌒＠)ノ\nĐây là một lời giới thiệu rất dài về chúng tôi!\nCảm ơn bạn đã quan tâm!');
+    addResponseMessage('Chào mừng đến với UR!ヾ(＠⌒ー⌒＠)ノ\nĐây là một lời giới thiệu rất dài về chúng tôi!\nCảm ơn bạn đã quan tâm!');
   }, []);
 
   const handleNewUserMessage = (newMessage) => {
