@@ -68,7 +68,7 @@ export default function App() {
 
   useEffect(() => {
     AOS.init();
-    addResponseMessage('Chào mừng đến với UR!ヾ(＠⌒ー⌒＠)ノ\nĐây là một lời giới thiệu rất dài về chúng tôi!\nCảm ơn bạn đã quan tâm!');
+    addResponseMessage('Cảm ơn bạn đã tin tưởng và chọn lựa **UR DECOR**\nHãy để lại tên và thông tin của bạn, chúng tôi sẽ liên hệ ngay nhé.');
   }, []);
 
   const handleNewUserMessage = (newMessage) => {
