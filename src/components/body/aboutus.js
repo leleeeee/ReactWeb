@@ -44,7 +44,7 @@ export default function AboutUs() {
         <br/>
         Tài khoản ngân hàng: 018 100 365 8837 Vietcombank Công ty UR DECOR
       </p>
-      <h3>Mẫu thiết kế đẹp của các Kiến trúc sư (Google)</h3>
+      <h3>Mẫu thiết kế đẹp của các Kiến trúc sư</h3>
       <div className='visual'>
         <img className='image'
           src='https://nhadepsang.com.vn/images/2018/05/thiet-ke-noi-that-nha-pho-dep-hien-dai-5.jpg'
