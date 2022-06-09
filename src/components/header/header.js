@@ -10,7 +10,7 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-      <Navbar bg="dark" variant={"dark"} expand="sm">
+      <Navbar bg="light" variant={"light"} expand="sm">
         <Container fluid>
           <Link to='/'>
             <Navbar.Brand href="#">
@@ -19,6 +19,7 @@ export default class Header extends Component {
                 width={HOME_ICON_SIZE}
                 height={HOME_ICON_SIZE}
                 alt="UR"
+                background="white"
               />
             </Navbar.Brand>
           </Link>
